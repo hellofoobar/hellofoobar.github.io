@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html  >
+<head>
+  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="assets/images/mbr-favicon-48x56-1.png" type="image/x-icon">
+  <meta name="description" content="">
+  
+  <title>modal</title>
+  <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/soundcloud-plugin/style.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+  <title>a little calculator</title>
+
+<script>
+ function updatePrice() {
+
+  var ppw = 0.186;
+
+  var service = $("input[name='service']:checked").val();
+  if(service == "off"){
+    ppw = 0.100;
+  }
+<meta name="theme-color" content="#255085">
+<link rel="manifest" href="manifest.json">
+<script src="sw-connect.js"></script></head>
+<body>
+  <div id="custom-html-a"><!-- Type valid HTML here -->
+
+  <form id="theform" action="#">
+      <h2>报价小程序</h2>
+    <fieldset data-role="controlgroup" data-type="horizontal" onchange="updatePrice()">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<legend>选择写作项目: </legend>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="service" id="radio-choice-h-2a" value="on" checked="checked">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="radio-choice-h-2a">原创写作</label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="service" id="radio-choice-h-2b" value="off">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="radio-choice-h-2b">修改语法</label>
+&nbsp;&nbsp;&nbsp;&nbsp;</fieldset>
+
+      <fieldset data-role="controlgroup" data-type="horizontal" onchange="updatePrice()">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<legend>选择写手水平: </legend>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="level" id="radio-choice-h-2c" value="on" checked="checked">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="radio-choice-h-2c">硕士写手👍</label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="level" id="radio-choice-h-2d" value="off">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="radio-choice-h-2d">博士写手👍👍</label>
+&nbsp;&nbsp;&nbsp;&nbsp;</fieldset>
+
+    <div>
+
+      <label for="days">选择交稿时间 :</label>
+      <!-- <input id="days" type="text"> -->
+      <select name="days" id="time" onchange="updatePrice()">
+        <option value="7days+" selected="selected">一周后交</option>
+        <option value="7days">7天内交</option>
+        <option value="6days">6天内交</option>
+        <option value="5days">5天内交</option>
+        <option value="4days">4天内交</option>
+        <option value="3days">3天内交</option>
+        <option value="2days">2天内交</option>
+        <option value="24hours">24小时内交</option>
+        <option value="12hours">12小时内交</option>
+        <option value="6hours">6小时内交</option>
+        <option value="3hours">3小时内交</option>
+      </select> 
+    </div>
+
+    <div style="padding-top: 2.5%">
+     <label for="kilo">选择交稿字数 左右拉↔️:</label>
+     <!-- <input id="kilo" type="text"> -->
+     <input type="range" name="words" id="words" value="200" min="200" max="3000" data-show-value="true" step="100" onchange="updatePrice()">
+     (一页double space约250-300字)
+   </div>
+
+   <div style="padding-top: 2.5%">
+     <label>妙思写作官网价 :</label>
+     <input id="tot" type="text" readonly="readonly" value="$38" style="border:0; color:green; font-weight:bold; font-size: 20px;">
+   </div><div>
+     <label></label>
+     <!-- <input id="calc" type="button" value="calculate"> -->
+     <input id="r" type="reset" value="清除 / 重新算">
+   </div>
+ </form></div>
+
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  
+  
+</body>
+</html>
