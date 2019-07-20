@@ -46,7 +46,7 @@
 
  function updatePrice() {
 
-  var ppw = 0.2;
+  var ppw = 0.199;
 
   var service = $("input[name='service']:checked").val();
   if(service == "off"){
@@ -97,7 +97,7 @@
   var words = document.getElementById("words").value;
    // alert(x);
    var price = ppw * words;
-   document.getElementById("tot").value = "$" + Math.ceil(price);
+   document.getElementById("tot").value = "$" + Math.floor(price);
 
  }
 </script>
@@ -313,7 +313,7 @@ color: #255085 !important;
 </div>
 
 <!-- Trigger the modal with a button -->
-<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"> 专业写作从 $38 起 👉🏻点击打开报价小程序</button>
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"> 专业写作从 $39 起 👉🏻点击打开报价小程序</button>
 
 
   <!-- Modal -->
@@ -372,7 +372,7 @@ color: #255085 !important;
 
    <div style="padding-top: 2.5%">
      <label>妙思写作官网价 :</label>
-     <input id="tot" type="text" readonly="readonly" value="$38" style="border:0; color:green; font-weight:bold; font-size: 20px;">
+     <input id="tot" type="text" readonly="readonly" value="$39" style="border:0; color:green; font-weight:bold; font-size: 20px;">
    </div><div>
      <label></label>
      <!-- <input id="calc" type="button" value="calculate"> -->
