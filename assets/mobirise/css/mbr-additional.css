@@ -1577,3 +1577,8 @@ body {
   color: #292c3d !important;
   text-shadow: none !important;
 }
+@media (max-width: 1366px) {
+  #custom-html-5 #myBanner {
+    height: 4em !important;
+  }
+}
