@@ -1392,6 +1392,9 @@ body {
   color: #292c3d !important;
   text-shadow: none !important;
 }
+#custom-html-5 #myModal {
+  -webkit-transform: translate3d(0, 0, 0);
+}
 .cid-rwFqatS6uh {
   background-image: url("../../../assets/images/mbr-1-1920x1280.jpg");
   background-position: right;
