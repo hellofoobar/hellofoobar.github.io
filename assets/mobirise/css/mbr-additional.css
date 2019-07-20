@@ -1336,62 +1336,6 @@ body {
   background: #ed4266 !important;
   box-shadow: none !important;
 }
-#custom-html-5 {
-  /* Type valid CSS here */
-}
-#custom-html-5 body {
-  background-color: #1B3A61;
-}
-#custom-html-5 #theform {
-  display: inline-block;
-  padding: 20px;
-  border: 1px solid #666;
-  border-radius: 10px;
-  background-color: #fff;
-  color: #666;
-  box-shadow: inset 0 0 20px #999,3px 3px 3px #666;
-  width: 100%;
-}
-#custom-html-5 #theform div {
-  /*      margin:5px 0;*/
-}
-#custom-html-5 #theform label {
-  /*      display:inline-block;*/
-  width: 200px;
-}
-#custom-html-5 .ui-slider-track .ui-btn.ui-slider-handle {
-  width: 38px;
-}
-#custom-html-5 input.ui-slider-input {
-  float: left;
-}
-#custom-html-5 .ui-slider-track {
-  width: 70%;
-  float: right;
-  margin: auto;
-}
-#custom-html-5 .ui-checkbox .ui-btn,
-#custom-html-5 .ui-radio .ui-btn {
-  text-align: center;
-}
-#custom-html-5 legend {
-  color: #666;
-}
-#custom-html-5 .btn-lg {
-  margin: auto !important;
-}
-#custom-html-5 .btn-info,
-#custom-html-5 .btn-info:active {
-  background-color: #bc0a45 !important;
-  border-color: #bc0a45 !important;
-}
-#custom-html-5 .btn-info:hover,
-#custom-html-5 .btn-info:focus,
-#custom-html-5 .btn-info.focus,
-#custom-html-5 .btn-info.active {
-  color: #292c3d !important;
-  text-shadow: none !important;
-}
 .cid-rwFqatS6uh {
   background-image: url("../../../assets/images/mbr-1-1920x1280.jpg");
   background-position: right;
@@ -1576,4 +1520,60 @@ body {
 }
 .cid-rwHfZBxM3Y H4 {
   color: #c1c1c1;
+}
+#custom-html-5 {
+  /* Type valid CSS here */
+}
+#custom-html-5 body {
+  background-color: #1B3A61;
+}
+#custom-html-5 #theform {
+  display: inline-block;
+  padding: 20px;
+  border: 1px solid #666;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #666;
+  box-shadow: inset 0 0 20px #999,3px 3px 3px #666;
+  width: 100%;
+}
+#custom-html-5 #theform div {
+  /*      margin:5px 0;*/
+}
+#custom-html-5 #theform label {
+  /*      display:inline-block;*/
+  width: 200px;
+}
+#custom-html-5 .ui-slider-track .ui-btn.ui-slider-handle {
+  width: 38px;
+}
+#custom-html-5 input.ui-slider-input {
+  float: left;
+}
+#custom-html-5 .ui-slider-track {
+  width: 70%;
+  float: right;
+  margin: auto;
+}
+#custom-html-5 .ui-checkbox .ui-btn,
+#custom-html-5 .ui-radio .ui-btn {
+  text-align: center;
+}
+#custom-html-5 legend {
+  color: #666;
+}
+#custom-html-5 .btn-lg {
+  margin: auto !important;
+}
+#custom-html-5 .btn-info,
+#custom-html-5 .btn-info:active {
+  background-color: #bc0a45 !important;
+  border-color: #bc0a45 !important;
+}
+#custom-html-5 .btn-info:hover,
+#custom-html-5 .btn-info:focus,
+#custom-html-5 .btn-info.focus,
+#custom-html-5 .btn-info.active {
+  color: #292c3d !important;
+  text-shadow: none !important;
 }
