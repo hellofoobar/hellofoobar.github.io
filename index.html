@@ -41,16 +41,35 @@
   <title>a little calculator</title>
 
   <script>
-
-
-
  function updatePrice() {
+
+  var sel = document.getElementById("time")
+  
+
+  for(var x=0; x < sel.options.length - 4; x++) {
+  var today = new Date(); 
+  var daysToAdd = 8 - x;
+  today.setDate(today.getDate() + daysToAdd);
+  var dd = today.getDate();
+  var mm = today.getMonth() + 1;
+  var yyyy = today.getFullYear();
+  if (daysToAdd===8) {
+      var someFormattedDate = "一周后交"
+  } else
+  {
+    var someFormattedDate = mm + '月'+ dd + '号' + yyyy + "交";
+  }
+ 
+
+        sel.options[x].innerHTML = someFormattedDate;
+  }
+
 
   var ppw = 0.199;
 
   var service = $("input[name='service']:checked").val();
   if(service == "off"){
-    ppw = 0.100;
+    ppw = 0.110;
   }
 
   var level = $("input[name='level']:checked").val();
@@ -94,13 +113,13 @@
     case "3hours":
       ppw *= 1.8;
   }
-  var words = document.getElementById("words").value;
-   // alert(x);
+  var words = document.getElementById("words").value
    var price = ppw * words;
    document.getElementById("tot").value = "$" + Math.floor(price);
 
  }
 </script>
+
 
 <style>
   .ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper {
@@ -375,7 +394,7 @@ color: #255085 !important;
     <div style="padding-top: 2.5%">
      <label for="kilo">选择交稿字数 左右拉↔️:</label>
      <!-- <input id="kilo" type="text"> -->
-     <input type="range" name="words" id="words" value="200" min="200" max="3000" data-show-value="true" step="100" onchange="updatePrice()">
+     <input type="range" name="words" id="words" value="200" min="200" max="5000" data-show-value="true" step="100" onchange="updatePrice()">
      ** 一页double space约250-300字 **
    </div>
 
