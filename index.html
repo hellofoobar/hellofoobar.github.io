@@ -41,83 +41,129 @@
   <title>a little calculator</title>
 
   <script>
- function updatePrice() {
+      function updatePrice() {
 
-  var sel = document.getElementById("time")
-  
 
-  for(var x=0; x < sel.options.length - 4; x++) {
-  var today = new Date(); 
-  var daysToAdd = 8 - x;
-  today.setDate(today.getDate() + daysToAdd);
-  var dd = today.getDate();
-  var mm = today.getMonth() + 1;
-  var yyyy = today.getFullYear();
-  if (daysToAdd===8) {
-      var someFormattedDate = "一周后交"
-  } else
-  {
-    var someFormattedDate = mm + '月'+ dd + '号交' ;
+    var sel = document.getElementById("time")
+
+
+    for(var x=0; x < sel.options.length - 4; x++) {
+      var today = new Date(); 
+      var daysToAdd = 8 - x;
+      today.setDate(today.getDate() + daysToAdd);
+      var dd = today.getDate();
+      var mm = today.getMonth() + 1;
+      var yyyy = today.getFullYear();
+      if (daysToAdd===8) {
+        var someFormattedDate = "一周后交"
+      } else
+      {
+        var someFormattedDate = mm + '月'+ dd + '号交';
+      }
+
+
+      sel.options[x].innerHTML = someFormattedDate;
+    }
+
+
+    var ppw = 0.199;
+
+    var service = $("input[name='service']:checked").val();
+
+    if(service == "off") {
+      ppw = 0.099;
+    }
+
+    var level = $("input[name='level']:checked").val();
+    if(level == "off"){
+      ppw *= 1.2;
+    }
+
+    var time = document.getElementById("time").value;
+
+    
+    if(service == "off"){
+      switch (time) {
+        case "7days+":
+        ppw *= 1;
+        break;
+        case "7days":
+        ppw *= 1.005;
+        break;
+        case "6days":
+        ppw *= 1.01;
+        break;
+        case "5days":
+        ppw *= 1.015;
+        break;
+        case "4days":
+        ppw *= 1.02;
+        break;
+        case "3days":
+        ppw *= 1.025;
+        break;
+        case "2days": 
+        ppw *= 1.03;
+        break;
+        case "24hours":
+        ppw *= 1.035;
+        break;
+        case "12hours":
+        ppw *= 1.05;
+        break
+        case "6hours":
+        ppw *= 1.07;
+        break;
+        case "3hours":
+        ppw *= 1.1;
+      }
+    } else {
+      switch (time) {
+        case "7days+":
+        ppw *= 1;
+        break;
+        case "7days":
+        ppw *= 1.07;
+        break;
+        case "6days":
+        ppw *= 1.14;
+        break;
+        case "5days":
+        ppw *= 1.21;
+        break;
+        case "4days":
+        ppw *= 1.28;
+        break;
+        case "3days":
+        ppw *= 1.35;
+        break;
+        case "2days": 
+        ppw *= 1.42;
+        break;
+        case "24hours":
+        ppw *= 1.5;
+        break;
+        case "12hours":
+        ppw *= 1.6;
+        break
+        case "6hours":
+        ppw *= 1.7;
+        break;
+        case "3hours":
+        ppw *= 1.8;
+      }
+
+
+
+
+
+
+    }
+    var words = document.getElementById("words").value
+    var price = ppw * words;
+    document.getElementById("tot").value = "$" + Math.floor(price);
+
   }
- 
-
-        sel.options[x].innerHTML = someFormattedDate;
-  }
-
-
-  var ppw = 0.199;
-
-  var service = $("input[name='service']:checked").val();
-  if(service == "off"){
-    ppw = 0.110;
-  }
-
-  var level = $("input[name='level']:checked").val();
-  if(level == "off"){
-    ppw *= 1.2;
-  }
-
-
-  var time = document.getElementById("time").value;
-  switch (time) {
-    case "7days+":
-      ppw *= 1;
-      break;
-    case "7days":
-      ppw *= 1.07;
-      break;
-    case "6days":
-      ppw *= 1.14;
-      break;
-    case "5days":
-      ppw *= 1.21;
-      break;
-    case "4days":
-      ppw *= 1.28;
-      break;
-    case "3days":
-      ppw *= 1.35;
-      break;
-    case "2days": 
-      ppw *= 1.42;
-      break;
-    case "24hours":
-      ppw *= 1.5;
-      break;
-    case "12hours":
-      ppw *= 1.6;
-      break
-    case "6hours":
-      ppw *= 1.7;
-      break;
-    case "3hours":
-      ppw *= 1.8;
-  }
-  var words = document.getElementById("words").value
-   var price = ppw * words;
-   document.getElementById("tot").value = "$" + Math.floor(price);
-
- }
 </script>
 
 
