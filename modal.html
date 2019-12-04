@@ -27,18 +27,8 @@
   <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
   <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
-  <title>a little calculator</title>
-
-<script>
- function updatePrice() {
-
-  var ppw = 0.186;
-
-  var service = $("input[name='service']:checked").val();
-  if(service == "off"){
-    ppw = 0.100;
-  }
 </head>
+
 <body>
   <div id="custom-html-a"><!-- Type valid HTML here -->
 
@@ -55,9 +45,9 @@
       <fieldset data-role="controlgroup" data-type="horizontal" onchange="updatePrice()">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<legend>选择写手水平: </legend>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="level" id="radio-choice-h-2c" value="on" checked="checked">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="radio-choice-h-2c">硕士写手👍</label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="radio-choice-h-2c">本科写手👍</label>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="level" id="radio-choice-h-2d" value="off">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="radio-choice-h-2d">博士写手👍👍</label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="radio-choice-h-2d">硕士/博士写手👍👍</label>
 &nbsp;&nbsp;&nbsp;&nbsp;</fieldset>
 
     <div>
@@ -88,7 +78,7 @@
 
    <div style="padding-top: 2.5%">
      <label>妙思写作官网价 :</label>
-     <input id="tot" type="text" readonly="readonly" value="$38" style="border:0; color:green; font-weight:bold; font-size: 20px;">
+     <input id="tot" type="text" readonly="readonly" value="$49" style="border:0; color:green; font-weight:bold; font-size: 20px;">
    </div><div>
      <label></label>
      <!-- <input id="calc" type="button" value="calculate"> -->
