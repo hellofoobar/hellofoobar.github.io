@@ -102,77 +102,112 @@
 
     var time = document.getElementById("time").value;
 
+    switch (time) {
+        case "7days+":
+        ppw *= 1;
+        break;
+        case "7days":
+        ppw *= 1.02;
+        break;
+        case "6days":
+        ppw *= 1.04;
+        break;
+        case "5days":
+        ppw *= 1.06;
+        break;
+        case "4days":
+        ppw *= 1.08;
+        break;
+        case "3days":
+        ppw *= 1.1;
+        break;
+        case "2days": 
+        ppw *= 1.12;
+        break;
+        case "24hours":
+        ppw *= 1.15;
+        break;
+        case "12hours":
+        ppw *= 1.25;
+        break
+        case "6hours":
+        ppw *= 1.35;
+        break;
+        case "3hours":
+        ppw *= 1.5;
+      }
+
     
-    if(service == "off"){
-      switch (time) {
-        case "7days+":
-        ppw *= 1;
-        break;
-        case "7days":
-        ppw *= 1.02;
-        break;
-        case "6days":
-        ppw *= 1.04;
-        break;
-        case "5days":
-        ppw *= 1.06;
-        break;
-        case "4days":
-        ppw *= 1.08;
-        break;
-        case "3days":
-        ppw *= 1.1;
-        break;
-        case "2days": 
-        ppw *= 1.12;
-        break;
-        case "24hours":
-        ppw *= 1.15;
-        break;
-        case "12hours":
-        ppw *= 1.25;
-        break
-        case "6hours":
-        ppw *= 1.35;
-        break;
-        case "3hours":
-        ppw *= 1.5;
-      }
-    } else {
-      switch (time) {
-        case "7days+":
-        ppw *= 1;
-        break;
-        case "7days":
-        ppw *= 1.02;
-        break;
-        case "6days":
-        ppw *= 1.04;
-        break;
-        case "5days":
-        ppw *= 1.06;
-        break;
-        case "4days":
-        ppw *= 1.08;
-        break;
-        case "3days":
-        ppw *= 1.1;
-        break;
-        case "2days": 
-        ppw *= 1.12;
-        break;
-        case "24hours":
-        ppw *= 1.15;
-        break;
-        case "12hours":
-        ppw *= 1.25;
-        break
-        case "6hours":
-        ppw *= 1.35;
-        break;
-        case "3hours":
-        ppw *= 1.5;
-      }
+    // if(service == "off"){
+    //   switch (time) {
+    //     case "7days+":
+    //     ppw *= 1;
+    //     break;
+    //     case "7days":
+    //     ppw *= 1.02;
+    //     break;
+    //     case "6days":
+    //     ppw *= 1.04;
+    //     break;
+    //     case "5days":
+    //     ppw *= 1.06;
+    //     break;
+    //     case "4days":
+    //     ppw *= 1.08;
+    //     break;
+    //     case "3days":
+    //     ppw *= 1.1;
+    //     break;
+    //     case "2days": 
+    //     ppw *= 1.12;
+    //     break;
+    //     case "24hours":
+    //     ppw *= 1.15;
+    //     break;
+    //     case "12hours":
+    //     ppw *= 1.25;
+    //     break
+    //     case "6hours":
+    //     ppw *= 1.35;
+    //     break;
+    //     case "3hours":
+    //     ppw *= 1.5;
+    //   }
+    // } else {
+    //   switch (time) {
+    //     case "7days+":
+    //     ppw *= 1;
+    //     break;
+    //     case "7days":
+    //     ppw *= 1.02;
+    //     break;
+    //     case "6days":
+    //     ppw *= 1.04;
+    //     break;
+    //     case "5days":
+    //     ppw *= 1.06;
+    //     break;
+    //     case "4days":
+    //     ppw *= 1.08;
+    //     break;
+    //     case "3days":
+    //     ppw *= 1.1;
+    //     break;
+    //     case "2days": 
+    //     ppw *= 1.12;
+    //     break;
+    //     case "24hours":
+    //     ppw *= 1.15;
+    //     break;
+    //     case "12hours":
+    //     ppw *= 1.25;
+    //     break
+    //     case "6hours":
+    //     ppw *= 1.35;
+    //     break;
+    //     case "3hours":
+    //     ppw *= 1.5;
+    //   }
 
 
 
@@ -436,7 +471,7 @@ color: #255085 !important;
 <input type="radio" name="grad" id="radio-choice-h-2c" value="off">
 <label for="radio-choice-h-2c">毕业论文🎓</label>
 <input type="radio" name="app" id="radio-choice-h-2d" value="off">
-<label for="radio-choice-h-2d">名校申请文书✅</label>
+<label for="radio-choice-h-2d">名校申请文书</label>
 <input type="radio" name="ppt" id="radio-choice-h-2e" value="off">
 <label for="radio-choice-h-2e">PPT+演讲稿🎤</label>
 <input type="radio" name="luv" id="radio-choice-h-2f" value="off">
