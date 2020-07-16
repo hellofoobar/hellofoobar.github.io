@@ -68,12 +68,12 @@
 
     var ppw = 0.225;
 
-    var hs = $("input[name='hs']:checked").val();
-    var uni = $("input[name='uni']:checked").val();
-    var grad = $("input[name='grad']:checked").val();
-    var app = $("input[name='app']:checked").val();
-    var ppt = $("input[name='ppt']:checked").val();
-    var luv = $("input[name='luv']:checked").val();
+    var hs = $("input[id='radio-choice-h-2a']:checked").val();
+    var uni = $("input[id='radio-choice-h-2b']:checked").val();
+    var grad = $("input[id='radio-choice-h-2c']:checked").val();
+    var app = $("input[id='radio-choice-h-2d']:checked").val();
+    var ppt = $("input[id='radio-choice-h-2e']:checked").val();
+    var luv = $("input[id='radio-choice-h-2f']:checked").val();
 
     if(hs == "on") {
       ppw = 0.199;
@@ -211,7 +211,7 @@
     // }
 
 
-    
+
     var words = document.getElementById("words").value
     var price = ppw * words;
     // if (words == 200 && service != "off") {
@@ -460,18 +460,18 @@ color: #255085 !important;
 <!--       <h3 style="text-align:center;">报价小程序</h3> -->
 <fieldset data-role="controlgroup" data-type="horizontal" onchange="updatePrice()">
 <legend>选择写作项目: </legend>
-<input type="radio" name="hs" id="radio-choice-h-2a" value="off">
+<input type="radio" name="service" id="radio-choice-h-2a" value="off">
 <label for="radio-choice-h-2a">高中写作👍</label>
 <input type="radio" name="uni" id="radio-choice-h-2b" value="on" checked="checked">
 <label for="radio-choice-h-2b">大学写作👍👍</label>
 	    
-<input type="radio" name="grad" id="radio-choice-h-2c" value="off">
+<input type="radio" name="service" id="radio-choice-h-2c" value="off">
 <label for="radio-choice-h-2c">毕业论文🎓</label>
-<input type="radio" name="app" id="radio-choice-h-2d" value="off">
-<label for="radio-choice-h-2d">名校申请文书✅</label>
-<input type="radio" name="ppt" id="radio-choice-h-2e" value="off">
+<input type="radio" name="service" id="radio-choice-h-2d" value="off">
+<label for="radio-choice-h-2d">名校申请文书</label>
+<input type="radio" name="service" id="radio-choice-h-2e" value="off">
 <label for="radio-choice-h-2e">PPT+演讲稿🎤</label>
-<input type="radio" name="luv" id="radio-choice-h-2f" value="off">
+<input type="radio" name="service" id="radio-choice-h-2f" value="off">
 <label for="radio-choice-h-2f">散文情书💌</label>
 
 
