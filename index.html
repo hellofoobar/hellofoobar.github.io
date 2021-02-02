@@ -242,6 +242,14 @@
     // if (words == 200 && service != "off") {
     //   price = 49
     // }
+    var page = words / 250
+    if (page >= 10) {
+	  price *= 0.85  
+    } else if (page >= 5) {
+	  price *= 0.9
+    } else if (page >= 4) {
+	  price *= 0.95
+    }
     document.getElementById("tot").value = "$" + Math.floor(price);
 
   }
