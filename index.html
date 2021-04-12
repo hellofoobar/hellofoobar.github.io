@@ -244,12 +244,20 @@
     // }
 	   
     var page = words / 250
-    if (page >= 12) {
-	    price -= 70
-    } else if (page >= 10) {
+    if (page >= 20) {
+	  price -= 90
+    } else if (page >= 18) {
+	  price -= 80 
+    } else if (page >= 16) {
+	  price -= 70 
+    } else if (page >= 14) {
+	  price -= 60 
+    } else if (page >= 12) {
 	  price -= 50 
+    } else if (page >= 10) {
+	  price -= 40 
     } else if (page >= 8) {
-	  price -= 30
+	  price -= 20
     } else if (page >= 6) {
 	  price -= 14
     } else if (page >= 4) {
