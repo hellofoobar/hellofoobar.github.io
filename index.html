@@ -132,22 +132,22 @@
         ppw *= 1;
         break;
         case "7days":
-        ppw *= 1.012;
+        ppw *= 1.000;
         break;
         case "6days":
-        ppw *= 1.024;
+        ppw *= 1.000;
         break;
         case "5days":
-        ppw *= 1.036;
+        ppw *= 1.000;
         break;
         case "4days":
-        ppw *= 1.048;
+        ppw *= 1.000;
         break;
         case "3days":
-        ppw *= 1.06;
+        ppw *= 1.000;
         break;
         case "2days": 
-        ppw *= 1.08;
+        ppw *= 1.1;
         break;
         case "24hours":
         ppw *= 1.2;
@@ -250,6 +250,9 @@
 	  price -= 50 
     } else if (page >= 8) {
 	  price -= 30
+    } else if (page >= 6) {
+	  price -= 14
+    }
     } else if (page >= 4) {
 	  price -= 10
     }
