@@ -242,8 +242,11 @@
     // if (words == 200 && service != "off") {
     //   price = 49
     // }
+	   
     var page = words / 250
-    if (page >= 10) {
+    if (page >= 12) {
+	    price -= 70
+    } else if (page >= 10) {
 	  price -= 50 
     } else if (page >= 8) {
 	  price -= 30
