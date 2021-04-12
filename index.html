@@ -244,11 +244,11 @@
     // }
     var page = words / 250
     if (page >= 10) {
-	  price *= 0.9  
+	  price -= 80 
     } else if (page >= 8) {
-	  price *= 0.9
+	  price -= 40
     } else if (page >= 4) {
-	  price *= 0.95
+	  price -= 20
     }
     document.getElementById("tot").value = "$" + Math.floor(price);
 
