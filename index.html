@@ -90,7 +90,7 @@
         ppw = 0.259;
         break;
         case "luv":
-        ppw = 0.199;
+        ppw = 0.189;
       }
 
     // var hs = $("input[id='radio-choice-h-2a']:checked").val();
@@ -265,7 +265,7 @@
     } else if (page >= 1) {
 	  price += 8
     } else {
-	  price = 49
+	  price = ppw * 250
     }
     document.getElementById("tot").value = "$" + Math.floor(price);
 
