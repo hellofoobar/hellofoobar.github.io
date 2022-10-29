@@ -244,19 +244,19 @@
     // }
 	   
     if (words >= 5000) {
-	  price -= 80
+	  price -= 100
     } else if (words >= 4500) {
-	  price -= 70 
+	  price -= 80 
     } else if (words >= 4000) {
-	  price -= 60 
+	  price -= 70 
     } else if (words >= 3500) {
-	  price -= 50 
+	  price -= 60 
     } else if (words >= 3000) {
-	  price -= 40
+	  price -= 50
     } else if (words >= 2500) {
-	  price -= 30
+	  price -= 40
     } else if (words >= 2000) {
-	  price -= 20
+	  price -= 30
     } else if (words >= 1500) {
 	  price -= 14
     } else if (words >= 1000) {
@@ -557,7 +557,7 @@ color: #255085 !important;
     <div style="padding-top: 2.5%">
      <label for="kilo">选择交稿字数 左右拉↔️:</label>
      <!-- <input id="kilo" type="text"> -->
-     <input type="range" name="words" id="words" value="250" min="250" max="5000" data-show-value="true" step="50" onchange="updatePrice()">
+     <input type="range" name="words" id="words" value="200" min="200" max="9999" data-show-value="true" step="100" onchange="updatePrice()">
      * double space约275字/页 收EMT/Zelle/Paypal/RMB(5.5) *
    </div>
 
